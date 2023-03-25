@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class Controller : MonoBehaviour
@@ -12,6 +13,6 @@ public class Controller : MonoBehaviour
 
     void Update()
     {
-        transform.Translate(Time.deltaTime * 7,0,0);
+        transform.Translate(Time.deltaTime * speed ,0,0);
     }
 }
